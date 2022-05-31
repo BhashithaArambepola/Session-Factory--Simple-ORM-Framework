@@ -19,6 +19,10 @@ public class SessionFactory {
         return this;
     }
 
+    public SessionFactory setConnection(Connection connection){
+        this.connection=connection;
+        return this;
+    }
 
 
 
