@@ -24,6 +24,12 @@ public class SessionFactory {
         return this;
     }
 
+    public SessionFactory build(){
+        if(this.connection== null){
+            throw new RuntimeException("Failed to build without a connection");
+        }
+        return this;
+    }
 
 
 
